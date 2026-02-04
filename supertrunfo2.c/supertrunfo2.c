@@ -23,7 +23,7 @@ int main() {
     int op1, op2;
     float valor1_c1 = 0, valor1_c2 = 0;
     float valor2_c1 = 0, valor2_c2 = 0;
-    char nomeAttr1[30], nomeAttr2[30];
+    char nomeAtributo1[30], nomeAtributo2[30];
 
     // MENU PRIMEIRO ATRIBUTO
     printf("Escolha o PRIMEIRO atributo:\n");
@@ -39,31 +39,31 @@ int main() {
         case 1:
             valor1_c1 = populacao1;
             valor1_c2 = populacao2;
-            sprintf(nomeAttr1, "População");
+            sprintf(nomeAtributo1, "População");
             break;
 
         case 2:
             valor1_c1 = area1;
             valor1_c2 = area2;
-            sprintf(nomeAttr1, "Área");
+            sprintf(nomeAtributo1, "Área");
             break;
 
         case 3:
             valor1_c1 = pib1;
             valor1_c2 = pib2;
-            sprintf(nomeAttr1, "PIB");
+            sprintf(nomeAtributo1, "PIB");
             break;
 
         case 4:
             valor1_c1 = pontos1;
             valor1_c2 = pontos2;
-            sprintf(nomeAttr1, "Pontos turísticos");
+            sprintf(nomeAtributo1, "Pontos turísticos");
             break;
 
         case 5:
             valor1_c1 = densidade1;
             valor1_c2 = densidade2;
-            sprintf(nomeAttr1, "Densidade");
+            sprintf(nomeAtributo1, "Densidade");
             break;
 
         default:
@@ -91,31 +91,31 @@ int main() {
         case 1:
             valor2_c1 = populacao1;
             valor2_c2 = populacao2;
-            sprintf(nomeAttr2, "População");
+            sprintf(nomeAtributo2, "População");
             break;
 
         case 2:
             valor2_c1 = area1;
             valor2_c2 = area2;
-            sprintf(nomeAttr2, "Área");
+            sprintf(nomeAtributo2, "Área");
             break;
 
         case 3:
             valor2_c1 = pib1;
             valor2_c2 = pib2;
-            sprintf(nomeAttr2, "PIB");
+            sprintf(nomeAtributo2, "PIB");
             break;
 
         case 4:
             valor2_c1 = pontos1;
             valor2_c2 = pontos2;
-            sprintf(nomeAttr2, "Pontos turísticos");
+            sprintf(nomeAtributo2, "Pontos turísticos");
             break;
 
         case 5:
             valor2_c1 = densidade1;
             valor2_c2 = densidade2;
-            sprintf(nomeAttr2, "Densidade");
+            sprintf(nomeAtributo2, "Densidade");
             break;
 
         default:
@@ -141,10 +141,10 @@ int main() {
     // RESULTADO
     printf("\nComparação entre %s e %s\n", pais1, pais2);
 
-    printf("\nAtributo 1: %s\n", nomeAttr1);
+    printf("\nAtributo 1: %s\n", nomeAtributo1);
     printf("%s: %.2f | %s: %.2f\n", pais1, valor1_c1, pais2, valor1_c2);
 
-    printf("\nAtributo 2: %s\n", nomeAttr2);
+    printf("\nAtributo 2: %s\n", nomeAtributo2);
     printf("%s: %.2f | %s: %.2f\n", pais1, valor2_c1, pais2, valor2_c2);
 
     printf("\nSoma %s: %.2f\n", pais1, soma1);
